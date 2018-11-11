@@ -1,0 +1,26 @@
+* {
+    font-weight: 500;
+}
+
+div {
+    margin: 10px;
+    border-bottom: 5px solid green;
+}
+
+#pressMe3 {
+    border:none;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(35, 168, 35);
+    color: rgb(255, 255, 255);
+}
+
+#pressMe4 {
+    border:none;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(35, 168, 35);
+    color: rgb(255, 255, 255);
+}
