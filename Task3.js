@@ -1,10 +1,9 @@
 var button = document.querySelector("#pressMe3");
 
-button.addEventListener("click",Task3());
+button.addEventListener("click", Timeout);
 
-function Task3 () {
+function Timeout () {
     setTimeout(() =>{
         alert("10 seconds passed");
     }, 10000);
-}
-
+};
