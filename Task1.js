@@ -4,7 +4,8 @@ As a best software engineer, I would like to have ability to use Array.map in my
 Send us jsfiddle, or Github Page for this polyfill.
 */
 
-function map (arr, callback) {
+if (!Array.prototype.map) {
+    Array.prototype.map = function map (callback, arr) {
     if(!Array.isArray(arr))
         throw new Error("Not an array")
 
@@ -16,4 +17,5 @@ function map (arr, callback) {
         new_arr.push(callback(array[i]),i ,arr);
     }
     return new_arr;
+    }
 }
