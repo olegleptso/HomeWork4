@@ -5,16 +5,16 @@ Send us jsfiddle, or Github Page for this polyfill.
 */
 
 if (!Array.prototype.map) {
-    Array.prototype.map = function map (callback, arr) {
-    if(!Array.isArray(arr))
+    Array.prototype.map = function (callback) {
+    if(!Array.isArray(this))
         throw new Error("Not an array")
 
     if(typeof(callback) !== 'function')
         throw new Error("Not a function")
 
     let new_arr = [];
-    for (let i =0; i < arr.length; i++){
-        new_arr.push(callback(array[i]),i ,arr);
+    for (let i =0; i < this.length; i++){
+        new_arr.push(callback(this[i]),i);
     }
     return new_arr;
     }
